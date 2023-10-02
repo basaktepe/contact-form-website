@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Forms Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="get">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="user-email">Your email</label>
+              <input type="email" name="user-email" id="useremail" required />
+            </li>
+            <li>
+              <label for="user-number">Your Phone Number</label>
+              <input
+                type="number"
+                name="user-number"
+                id="usernumber"
+                required
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="user-message">Your Message</label>
+          <textarea
+            name="user-message"
+            id="usermessage"
+            rows="10"
+            required
+            minlength="10"
+            maxlength="200"
+          ></textarea>
+        </section>
+
+        <section>
+          <label for="how-you-find">How did you find us?</label>
+          <select name="how-you-find" id="howyoufind" required>
+            <option value="web-search">Web Search</option>
+            <option value="word-of-mouth">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+
+        <section>
+          <h3>How should we reply?</h3>
+          <ul>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                value="Call"
+                id="call-user"
+                required
+              />
+              <label for="call-user">Call me</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                value="email"
+                id="send-email"
+                required
+              />
+              <label for="send-email">Send me an email</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                value="dont-reply"
+                id="dontreply"
+                required
+              />
+              <label for="dontreply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section class="inline-control">
+          <input
+            type="checkbox"
+            name="accept-terms"
+            id="acceptterms"
+            required
+          />
+          <label for="accept-terms">Accept Terms</label>
+        </section>
+        <section>
+          <ul id="buttons">
+            <li><button type="reset" id="reset-button">Clear</button></li>
+            <li><button type="submit" id="submit-button">Submit</button></li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
